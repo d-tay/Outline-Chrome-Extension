@@ -1,0 +1,18 @@
+{
+	"name": "Outline+",
+	"version": "2.0",
+	"manifest_version": 2,
+	"icons": { 	"16": "apple-icon-180x180.png",
+				"48": "apple-icon-180x180.png",
+				"128": "apple-icon-180x180.png" },
+	"content_scripts": [
+		{
+		"matches": ["<all_urls>"],
+		"js": ["content.js"]
+		}
+	],
+	"browser_action":{
+	"default_popup": "button.html",
+	"default_title": "Outline!"
+	}
+}
